@@ -1,0 +1,67 @@
+.mainPanel{
+  grid-area: M;  
+}
+
+.banknotes{
+  grid-area: B;
+}
+
+.selectedBanknotes {
+  grid-area: S;
+}
+
+.footer {
+  grid-area: F;
+}
+
+/* Mobile layout */
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    "M M"
+    "B B"
+    "S S"
+    "F F";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+.mainPanel{
+  display: grid;
+  grid-template-columns: 100px auto 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-areas:
+      "M B"
+      "M S"
+      "F F";
+    grid-template-rows: auto 1fr auto;
+  }
+  .mainPanel {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+}
+
+
+.bnGrid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(50px,1fr));
+  gap: 10px;
+}
