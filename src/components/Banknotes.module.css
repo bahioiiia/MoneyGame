@@ -1,5 +1,15 @@
 .coinGrid {
     display: grid;
-    grid-template-columns: repeat(7, minmax(40px, auto)) auto;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(4, minmax(40px, auto));
     gap: 10px;
 }
+
+@media screen and (min-width: 630px) {
+    .coinGrid {
+        grid-auto-flow: row;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(7, minmax(40px, auto)) auto;
+        }
+    }

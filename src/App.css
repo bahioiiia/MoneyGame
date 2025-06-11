@@ -43,7 +43,7 @@
     "B B"
     "S S"
     "F F";
-    grid-template-columns: auto minmax(435px, 1fr);
+    grid-template-columns: auto minmax(320px, 1fr);
     grid-template-rows: auto auto 1fr auto;
     gap: 10px;
     justify-items: center;
