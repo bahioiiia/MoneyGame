@@ -23,7 +23,7 @@
     "B B"
     "S S"
     "F F";
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto minmax(425px, 1fr);
     grid-template-rows: auto auto 1fr auto;
     gap: 10px;
     justify-items: center;
@@ -60,7 +60,7 @@
 }
 
 
-.bnGrid {
+.coinGrid {
   display: grid;
   grid-template-columns: repeat(8, minmax(50px,1fr));
   gap: 10px;

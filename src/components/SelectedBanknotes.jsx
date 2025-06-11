@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MoneyItem from './MoneyItem';
+// import Test from './test';
 
 const SelectedBanknotes = () => {
     const { selectedBanknotes, selectedCoins } = useSelector(state => state.game);
@@ -19,6 +20,7 @@ const SelectedBanknotes = () => {
 
     return (
         <div style={{ padding: '20px' }}>
+            {/* <Test/>  */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 {renderSelectedMoney(selectedBanknotes)}
             </div>

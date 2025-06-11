@@ -38,7 +38,7 @@ const Banknotes = () => {
                     <MoneyItem key={banknote.value} item={banknote} onClick={handleMoneyClick} />
                 ))}
             </div>
-            <div class="bnGrid">
+            <div className="coinGrid">
                 {coins.map((coin) => (
                     <MoneyItem key={coin.value} item={coin} onClick={handleMoneyClick} />
                 ))}
