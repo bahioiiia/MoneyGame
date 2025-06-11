@@ -12,9 +12,9 @@ const MoneyItem = ({ item, onClick }) => {
                 cursor: 'pointer',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center',
+            //     alignItems: 'center',
                 gap: '8px',
-                transition: 'transform 0.2s',
+            //     transition: 'transform 0.2s',
             }}
             onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
             onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
@@ -24,7 +24,7 @@ const MoneyItem = ({ item, onClick }) => {
                 alt={item.name}
                 style={{
                     width: scaledSize,
-                    objectFit: 'contain'
+                    // objectFit: 'contain'
                 }}
             />
         </div>

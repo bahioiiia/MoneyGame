@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addMoney } from '../store/gameSlice';
 import MoneyItem from './MoneyItem';
+import s from './Banknotes.module.css';
 
 const banknotes = [
     { value: 50000, name: '500€', image: '/img/500e.png', ratio: 1.0 },
@@ -32,18 +33,18 @@ const Banknotes = () => {
     };
 
     return (
-        <div style={{ padding: '20px' }}>
+        <>
             <div  style={{ display: 'flex', flexWrap: 'wrap', gap: '10px',paddingBottom: '20px' }}>
                 {banknotes.map((banknote) => (
                     <MoneyItem key={banknote.value} item={banknote} onClick={handleMoneyClick} />
                 ))}
             </div>
-            <div className="coinGrid">
+            <div className={s.coinGrid}>
                 {coins.map((coin) => (
                     <MoneyItem key={coin.value} item={coin} onClick={handleMoneyClick} />
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 

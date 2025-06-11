@@ -1,0 +1,5 @@
+.coinGrid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(40px, auto)) auto;
+    gap: 10px;
+}
