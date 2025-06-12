@@ -13,8 +13,8 @@ const MoneyItem = ({ item, onClick }) => {
                 display: 'flex',
                 flexDirection: 'column',
             //     alignItems: 'center',
-                gap: '8px',
-            //     transition: 'transform 0.2s',
+                // gap: '8px',
+                transition: 'transform 0.2s',
             }}
             onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
             onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}

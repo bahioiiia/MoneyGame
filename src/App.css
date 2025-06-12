@@ -1,5 +1,8 @@
 .mainPanel{
-  grid-area: M;  
+  grid-area: M;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
 }
 
 .banknotes{

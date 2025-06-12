@@ -34,7 +34,7 @@ const Banknotes = () => {
 
     return (
         <>
-            <div  style={{ display: 'flex', flexWrap: 'wrap', gap: '10px',paddingBottom: '20px' }}>
+            <div className={s.bnFlex}>
                 {banknotes.map((banknote) => (
                     <MoneyItem key={banknote.value} item={banknote} onClick={handleMoneyClick} />
                 ))}
