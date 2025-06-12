@@ -41,6 +41,7 @@
 .container {
   display: grid;
   min-height: 100vh;
+  min-width: 425px;
   grid-template-areas:
     "M M"
     "B B"
