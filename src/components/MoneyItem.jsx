@@ -12,7 +12,8 @@ const MoneyItem = ({ item, onClick }) => {
                 cursor: 'pointer',
                 display: 'flex',
                 flexDirection: 'column',
-            //     alignItems: 'center',
+                alignItems: 'center',
+                justifyContent: 'center',
                 // gap: '8px',
                 transition: 'transform 0.2s',
             }}
