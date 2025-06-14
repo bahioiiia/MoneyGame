@@ -1,0 +1,18 @@
+.moneyItem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+.moneyItem:hover {
+    transform: scale(1.05);
+}
+.moneyItem img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
